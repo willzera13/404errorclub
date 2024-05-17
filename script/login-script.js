@@ -1,9 +1,3 @@
-const user = {
-    userEmail: "visitante@email.com",
-    userPassword: "senha1234"
-
-}
-
 function logInUser(user){
     const email = document.getElementById("input-email")
     const password = document.getElementById("input-password")
@@ -17,15 +11,14 @@ function logInUser(user){
         alertEmail.innerHTML = "Campo vázio."       
     }
     if(email.value){ 
-        if(email.value != user.userEmail){
+        if(email.value != 'visitante@email.com'){
             email.style.border = "1px solid var(--alert-color)"
             alertEmail.innerHTML = "Usuario não encontrado. Digite um usúario valido."
-            alert("foi")
         } 
-        if(email.value == user.userEmail){
+        if(email.value == 'visitante@email.com'){
             email.style.border = "1px solid var(--color-01)"
             alertEmail.innerHTML = ""  
-            if(password.value != user.userPassword){
+            if(password.value != 'senha1234'){
                 password.style.border = "1px solid var(--alert-color)"
                 alertPassword.innerHTML = "Senha incorreta." 
             }
@@ -36,10 +29,6 @@ function logInUser(user){
     if(!password.value){
         password.style.border = "1px solid var(--alert-color)"
         alertPassword.innerHTML = "Campo vázio"       
-    }
-    if(password.value){
-        password.style.border = "1px solid var(--color-01)"
-        alertPassword.innerHTML = ""      
     }
 
 }
