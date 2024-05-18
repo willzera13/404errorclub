@@ -34,5 +34,5 @@ function logInUser(user){
 }
 
 function rememberPassword(){
-    alert(`email: ${user.userEmail}\nsenha: ${user.userPassword}`)
+    alert(`email: visitante@email.com\nsenha: senha1234`)
 }
