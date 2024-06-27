@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 body, html{
     margin: 0;
 }
+/* ---------------------------------------------------- */
+/* navbar */
 #navbarGeral{
     background-color: rgba(61, 88, 133, 1);
     height: 11.5vh;
@@ -38,6 +42,7 @@ body, html{
     border: 0;
     outline: none;
     font-size: 100%;
+    padding: 20px;
 }
 #logo{
     margin-left: 5%;
@@ -55,11 +60,12 @@ body, html{
     color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 100%;
+    text-decoration: none;
 }
 
 #btPesquisa{
-    width: 2.4vw;
-    height: 2.2vw;
+    width: 2vw;
+    height: 2vw;
     background-color: rgba(61, 88, 133, 1);
     position: relative;
     right: 5.8%;
@@ -82,6 +88,10 @@ body, html{
     width: auto;
     height: 29%;
 }
+/* navbar */
+/*---------------------------------------------------*/
+
+/* compra */
 #geralProduto{
     display: flex;
     justify-content: center;
@@ -89,17 +99,16 @@ body, html{
     width: 100vw;
    /* background-color: #ffffff;*/
   
-    gap: 2%;
 }
 
 #imgProduto{
     height: 100%;
-    width: 47%;
+    width: 50%;
     display: flex;
     flex-direction: column;
    
     
-   /* background-color: #3f538a;*/
+   /* background-color: #3f538a; */
     text-align: center;
 
 }
@@ -107,26 +116,29 @@ body, html{
 #fotoPrincipal{
     width: 100%;
     height: 75%;
-   /* background-color: #b5c8ff;*/
+    /* background-color: #b5c8ff; */
 }
 #fotoSecundarias{
     width: 100%;
     height: 25%;
-    /*background-color: #e0e8ff;*/
+    /* background-color: #e0e8ff; */
 
     display: flex;
-    gap: 4%;
+    gap: 1%;
     margin-top: 1%;
 
+}
+#imgFotoPrincipal{
+    margin-top: 3%;
 }
 #descriProduto{
     height: 100%;
     width: 42%;
 
-  /*  background-color: #ffffff;*/
+  /* background-color: #ffb9b9; */
 }
 
-/*---------------------------------------------------*/
+
 #imgFotoPrincipal{
 
 }
@@ -137,11 +149,12 @@ margin-left: 15%;
 
 .titulo{
     /* background-color: #c2d9ff; */
-    /* height: 33%; */
-    margin-top: 5%;
+    
+    margin-top: 7%;
 }
 #nomeProduto{
-    font: 100%;
+    font-size: 55px;
+    width: 70%;
 }
 #precoProduto{
 }
@@ -149,8 +162,7 @@ margin-left: 15%;
 height: 33%;
 /* background-color: #c5ffda; */
 }
-#h5{
-    margin-top: 1%;
+#h5Tamanho{
 }
 .divBtnTamanhos{
 width: 70%;
@@ -158,11 +170,14 @@ height: 21%;
 
 }
 .btnTamanho{
+    font-size: x-large;
+    color: #1d2023;
     width: 20%;
     height: 100%;
     margin-right: 10px;
     border: 2px solid #84A1F0;
     transition: transform 0.2s, background-color 0.2s;
+    background-color: white;
 
 }
 .btnTamanho:hover{
@@ -170,11 +185,14 @@ height: 21%;
     color: white;
     transform: scale(1.02);
 }
-
+#divBtCompraTotal{
+    display: flex;
+    height: 18%;
+    gap: 7%;
+  }
 #btnComprar{
-    width: 45%;
-    /*height: 20%;*/
-    margin-right: 2%;
+    width: 35%;
+    font-size: large;
     border: none;
     border-radius: 7px;
     color: white;
@@ -190,31 +208,33 @@ height: 21%;
 
 }
 .btnMaisMenos{
-    width: 7%;
-    /*height: 20%;*/
+    width: 45px;
     border: 1px solid black;
     border-radius: 2px;
 }
 #contador{
    
    padding: 9px;
+   font-size: large;
+  
 
 }
 .calcularFrete{
     width: 70%;
     height: 33%;
-    margin-top: 2%;
+    margin-top: 4%;
     /* background-color: #b5c8ff; */
 }
 #inputCep{
     margin-top: 1%;
-    height:20% ;
+    width: 50%;
+    height:18% ;
+    margin-right: 5%;
 }
 #btnCalcularCep{
-height:20% ;
-width: 25%;
-
-border-radius: 7px;
+    height:18% ;
+    width: 30%;
+    border-radius: 5px;
 margin-left: 2%;
 color: white;
 background-color: #84A1F0;
@@ -226,65 +246,62 @@ transition: transform 0.2s, background-color 0.2s;
     background-color: #0d6efd;
     transform: scale(1.02);
 }
+
+.txtDescriProduto{
+    text-align: center;
+    width: 99vw;
+    margin-top: 4%;
+/* background-color: #616a74; */
+}
+.tituloDescri{
+    color: gray;
+    margin: 0 auto;
+}
+.pDescri{
+  margin-top: 2%;
+  color: rgb(73, 73, 73);
+  text-align: justify;
+  display: inline-block; 
+  max-width: 60%; 
+}
+
+/* compra */
+
 /*---------------------------------------------------*/
 
-
-
-
-
+/* footer */
 
 .navbar navbar-light {
-
     border-radius: 0px;
     background: #e0e0e0;
     box-shadow: -26px 26px 52px #7b7b7b,
         26px -26px 52px #ffffff;
-
-
 }
-
 .navbar {
-
     background-color: #3D5885;
     color: #e0e0e0;
-
-
 }
-
-
 .novidades {
-
     background-color: #555555;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 .novidades h1 {
-
     color: #ffffff;
     font-size: 32px;
     font-weight: 700;
-
 }
-
 .quero {
-
     margin-left: 200px;
     display: flex;
     text-align: center;
 }
-
 .quero input {
-
     width: 400px;
     height: 30px;
-
 }
-
 .quero button {
-
     text-align: center;
     background-color: #84A1F0;
     border: none;
@@ -292,192 +309,105 @@ transition: transform 0.2s, background-color 0.2s;
     height: 30px;
     width: 80px;
     margin-left: 20px;
-
-
 }
-
 .rodape {
-
     background-color: #202020;
     display: flex;
     height: 300px;
     width: 100%;
-
 }
-
-
 .rodape1 {
-
     margin-left: 50px;
     margin-top: 50px;
-
 }
-
 .rodape p {
-
     color: #ffffff;
     max-width: 400px;
-
 }
-
 .rodape2 h2 {
-
     color: #84A1F0;
     margin-top: 50px;
-
 }
-
 .rodape hr {
-
     border: 1px solid#555555;
-
-
 }
-
-
 .rodape2 a {
-
     display: grid;
     text-decoration: none;
     color: #ffffff;
-
 }
-
 .rodape2 {
-
     margin-left: 100px;
-
 }
-
 .desenvolvido {
-
     text-align: center;
     justify-content: center;
     display: flex;
     height: 1px;
-
 }
-
 .rodape3 img {
-
     width: 30px;
     margin-top: 50px;
-
-
 }
-
 .rodape3 {
-
     margin-left: 300px;
-
 }
-
 .botao button {
-
     background-color: #3CE87C;
     border: none;
     width: 200px;
     margin-top: 50px;
 }
-
 .rodape-pay img {
-
     display: flex;
     height: 50px;
 }
-
 .rodape-pay {
-
     display: flex;
     justify-content: center;
     position: relative;
     bottom: 15px;
-
 }
-
-
-
-
 @media (max-width: 371px) {
-
     .novidades {
-        display: grid;
-
-
-
-
+        display: grid
     }
-
 .novidades input {
-
     width: 200px;
-    
-
 }
-
 .quero {
-
 margin-right: 200px;
-
 }
-
 .novidades h1 {
-
-font-size: 25px;
-margin-left: 200px;
-
-}
-
-.rodape {
-
-display: grid;
-height: 800px;
-
-
-}
-
-.rodape p {
-
-
-max-width: 240px;
-
-}
-
-.rodape hr {
-
-width: 250px;
-
-}
-
-.rodape2 {
-
-margin-left: 50px;
-
-}
-
-.rodape2 hr {
-
-width: 70px;
-
-}
-
-.rodape3 {
-
-margin-left: 50px;
-
-}
-
-footer {
-
-display: none;
-
-}
-
-
-}
-
-
-
+    font-size: 25px;
+    margin-left: 200px;
+    }
+    .rodape {
+    display: grid;
+    height: 800px;
+    }
+    .rodape p {
+    max-width: 240px;
+    }
+    .rodape hr {
+    width: 250px;
+    }
+    .rodape2 {
+    margin-left: 50px;
+    }
+    .rodape2 hr {
+    width: 70px;
+    }
+    .rodape3 {
+    margin-left: 50px;
+    }
+    footer {
+    display: none;
+    }
+    }
+    /* footer */
+    /* ----------------------------------------------------------------------- */
+    /* carrossel */
 #destaquesGeral{
     width: 100vw;
     height: 50vh;
