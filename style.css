@@ -9,7 +9,7 @@ body, html{
     background-color: rgba(61, 88, 133, 1);
     height: 11.5vh;
     width: 100vw;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.514);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.404);
     display: flex;
     justify-content: space-between;
     position: fixed;
