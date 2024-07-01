@@ -467,12 +467,12 @@ text-decoration: none;
 
 
 
-  #divbtComprar{
+#divbtComprar{
     display: flex;
     justify-content: center;
-  }
+}
 
-  .btComprar{    
+.btComprar{    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -483,27 +483,67 @@ text-decoration: none;
     color: white;
     background-color: #84A1F0;
     text-decoration: none;
-  }
+}
 
-  #prevBtn, #nextBtn{
+#prevBtn, #nextBtn{
     background-color: #ffffff;
     border: none;
-  }
-  #prevBtn2, #nextBtn2{
+}
+#prevBtn2, #nextBtn2{
     background-color: #ffffff;
     border: none;
-  }
-  #prevBtn3, #nextBtn3{
+}
+#prevBtn3, #nextBtn3{
     background-color: #ffffff;
     border: none;
-  }
+}
 
-  .titulos{
+.titulos{
     margin-left: 5%;
     color: #3f538a;
-  }
+}
 
-  #divBtCompraTotal{
+#divBtCompraTotal{
     display: flex;
     height: 18%;
-  }
+}
+
+/*----- TENIS ------*/
+.container-geral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-right: 10px;
+    }
+    
+.container-geral img{
+    width: 250px;
+}
+
+.container-favorito{
+    background-color: #E7E7E7;
+    margin-inline-start: 40px;
+    height: 370px;
+    text-align: center;
+}
+    
+.container-favorito p{
+    margin-right: 125px;
+    font-weight: 500;
+    font-size: 14px;
+}
+    
+.container-favorito h2{
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 60px;
+}
+    
+.container-geral button{
+    background-color: #84A1F0;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    width: 180px;
+}
