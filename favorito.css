@@ -155,7 +155,6 @@ border:10px solid #000;
 
 /* ---------------------------------------------------- */
 /* navbar */
-
 #navbarGeral{
     background-color: rgba(61, 88, 133, 1);
     height: 10.5vh;
@@ -173,6 +172,7 @@ border:10px solid #000;
     align-items: center;
     width: 12.5%;
 }
+
 #navbarCenter{
     height: 100%;
     width: 45%;
@@ -180,6 +180,7 @@ border:10px solid #000;
     justify-content: center;
     align-items: center;
 }
+
 #navbarLeft{
     width: 12.5%;
     display: flex;
@@ -187,6 +188,7 @@ border:10px solid #000;
     align-items: center;
     margin-right: 2%;
 }
+
 #barraPesquisa{
     width: 90%;
     height: 45%;
@@ -208,6 +210,9 @@ border:10px solid #000;
     justify-content: space-evenly;
     align-items: center;
     gap: 5%;
+}
+.divBtNav img{
+    height: 1.6vw;
 }
 
 .botoesNav{
@@ -244,11 +249,10 @@ border:10px solid #000;
 }
 #iconFav{
     width: auto;
-    height: 120%;
+    height: 100%;
 }
 #iconEntrar{
     width: auto;
-    height: 29%;
 }
 /* navbar */
 /*---------------------------------------------------*/

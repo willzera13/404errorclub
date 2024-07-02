@@ -152,9 +152,8 @@ margin-right: 100px;
    }
 
 
-   /* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
 /* navbar */
-
 #navbarGeral{
     background-color: rgba(61, 88, 133, 1);
     height: 10.5vh;
@@ -172,6 +171,7 @@ margin-right: 100px;
     align-items: center;
     width: 12.5%;
 }
+
 #navbarCenter{
     height: 100%;
     width: 45%;
@@ -179,6 +179,7 @@ margin-right: 100px;
     justify-content: center;
     align-items: center;
 }
+
 #navbarLeft{
     width: 12.5%;
     display: flex;
@@ -186,6 +187,7 @@ margin-right: 100px;
     align-items: center;
     margin-right: 2%;
 }
+
 #barraPesquisa{
     width: 90%;
     height: 45%;
@@ -207,6 +209,9 @@ margin-right: 100px;
     justify-content: space-evenly;
     align-items: center;
     gap: 5%;
+}
+.divBtNav img{
+    height: 1.6vw;
 }
 
 .botoesNav{
@@ -243,11 +248,10 @@ margin-right: 100px;
 }
 #iconFav{
     width: auto;
-    height: 120%;
+    height: 100%;
 }
 #iconEntrar{
     width: auto;
-    height: 29%;
 }
 /* navbar */
 /*---------------------------------------------------*/
