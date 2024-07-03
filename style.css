@@ -154,11 +154,6 @@ body, html{
   /* background-color: #ffb9b9; */
 }
 
-
-#imgFotoPrincipal{
-
-}
-
 #fotoSecundaria1{
 margin-left: 15%;
 }
@@ -172,14 +167,12 @@ margin-left: 15%;
     font-size: 55px;
     width: 70%;
 }
-#precoProduto{
-}
+
 .tamanhos{
 height: 33%;
 /* background-color: #c5ffda; */
 }
-#h5Tamanho{
-}
+
 .divBtnTamanhos{
 width: 70%;
 height: 21%;
