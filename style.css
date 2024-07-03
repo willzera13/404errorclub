@@ -275,6 +275,114 @@ transition: transform 0.2s, background-color 0.2s;
   max-width: 60%; 
 }
 
+@media (max-width:431px) {
+    #geralProduto{
+        display: block;
+        height: 58vh;
+    }
+    #imgProduto{
+        width: 100%;
+    }
+    #fotoSecundarias{
+        width: 30%;
+        height: 24.5%;
+        gap: 3%;    
+    }
+    /* ----------------------------- */
+    .txtDescriProduto{
+        margin-top: 130%;
+    }
+  /* ----------------------------- */
+  #descriProduto{
+    width: 100%;
+    margin-left: 10%;
+}
+.titulo{    
+    margin-top: 0;
+}
+
+#nomeProduto{
+    font-size: 45px;
+    width: 100%;
+}
+.divBtnTamanhos{
+    width: 85%;
+    height: 23%;
+
+}
+.btnTamanho{
+    font-size: medium;
+    margin-right: 3%;
+
+}
+#divBtCompraTotal{
+    height: 18%;
+    gap: 11%;
+  }
+  #btnComprar{
+    width: 40%;
+    font-size: medium;
+}
+#contador{
+    padding: 4px;
+    font-size: medium;
+ }
+ .calcularFrete{
+    width: 90%;
+}
+ #inputCep{
+    margin-top: 2%;
+    width: 48%;
+    height:17% ;
+    margin-right: 4%;
+}
+#btnCalcularCep{
+    height:17% ;
+    width: 35%;
+    font-size: small;
+}
+
+.tituloDescri{
+    margin: 0 auto;
+}
+.pDescri{
+    margin-top: 5%;
+    max-width: 90%; 
+  }
+
+}
+@media (max-width:376px) {
+    #geralProduto{
+        height: 55vh;
+    }
+    #fotoSecundarias{
+        margin-left: 2%;   
+    }
+
+    #descriProduto{
+        margin-left: 8%;
+        margin-bottom: 2%;
+    }
+    #nomeProduto{
+        font-size: 35px;
+    }
+    #divBtCompraTotal{
+        height: 23%;
+        gap: 11%;
+      }
+      .calcularFrete{
+        height: 36%;
+        margin-top: 13%;
+    }
+    .txtDescriProduto{
+        margin-top: 138%;
+    }
+    .pDescri{
+        margin-top: 5%;
+        max-width: 80%; 
+      }
+}
+
 /* compra */
 
 /*---------------------------------------------------*/
@@ -516,10 +624,7 @@ text-decoration: none;
     color: #3f538a;
 }
 
-#divBtCompraTotal{
-    display: flex;
-    height: 18%;
-}
+
 
 /*----- TENIS ------*/
 .container-geral{
