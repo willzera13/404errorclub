@@ -95,9 +95,23 @@ const destino = document.getElementById('destino');
 destino.textContent= numero;
 }
 //--------------------------------------------------------------------------------------
+function trocarImagem(idImagemSecundaria) {
+  const imgPrincipal = document.getElementById('imgFotoPrincipal');
+  const imgSecundaria = document.getElementById(idImagemSecundaria);
+
+  // Salvar a src da imagem principal
+  const srcPrincipal = imgPrincipal.src;
+
+  // Trocar a src da imagem principal com a da imagem secundária
+  imgPrincipal.src = imgSecundaria.src;
+
+  // Trocar a src da imagem secundária com a da imagem principal original
+  imgSecundaria.src = srcPrincipal;
+}
 
 
-
+// Adicionar o evento de ajuste de estilo no carregamento da página
+window.addEventListener('load', ajustarEstiloSecundarias);
 //------------------------------------------------------------------------------------------
 function validarCEP() {
 
@@ -126,63 +140,3 @@ preco.textContent = 'R$ 2.099.54';
 
 
 }
-
-
-    // // Função botões proximo/anterior
-    // const prevBtn = document.getElementById("prevBtn");
-    // const nextBtn = document.getElementById("nextBtn");
-    // const boxes = document.querySelectorAll(".destaqInd");
-    // let currentIndex = 0;
-
-    // function showBoxes(startIndex) {
-    //   const totalBoxes = boxes.length;
-    //   const boxesToShow = 4;
-
-    //   boxes.forEach((box, i) => {
-    //     if (i >= startIndex && i < startIndex + boxesToShow) {
-    //       box.style.display = "block";
-    //     } else {
-    //       box.style.display = "none";
-    //     }
-    //   });
-    // }
-
-    // function checkScreenSize() {
-    //   if (window.innerWidth <= 768) {
-    //     showBoxes(currentIndex);
-    //     prevBtn.style.visibility = "visible";
-    //     nextBtn.style.visibility = "visible";
-    //   } else {
-    //     showBoxes(currentIndex);
-    //     prevBtn.style.visibility = "visible";
-    //     nextBtn.style.visibility = "visible";
-    //   }
-    // }
-
-    // function updateButtons() {
-    //   prevBtn.style.visibility = (currentIndex > 0) ? "visible" : "hidden";
-    //   nextBtn.style.visibility = (currentIndex + 4 < boxes.length) ? "visible" : "hidden";
-    // }
-
-    // checkScreenSize();
-    // updateButtons();
-
-    // prevBtn.addEventListener("click", () => {
-    //   if (currentIndex > 0) {
-    //     currentIndex--;
-    //     showBoxes(currentIndex);
-    //     updateButtons();
-    //   }
-    // });
-
-    // nextBtn.addEventListener("click", () => {
-    //   if (currentIndex + 4 < boxes.length) {
-    //     currentIndex++;
-    //     showBoxes(currentIndex);
-    //     updateButtons();
-    //   }
-    // });
-
-    // window.addEventListener("resize", checkScreenSize);
-
-     
