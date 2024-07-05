@@ -101,7 +101,7 @@ height: 21%;
     gap: 7%;
   }
 #btnComprar{
-    width: 100%;
+    width: 35%;
     font-size: large;
     border: none;
     border-radius: 7px;
@@ -176,6 +176,8 @@ transition: transform 0.2s, background-color 0.2s;
 }
 
 @media (max-width:431px) {
+
+
     #geralProduto{
         display: block;
         height: 58vh;
@@ -223,7 +225,7 @@ transition: transform 0.2s, background-color 0.2s;
     gap: 11%;
   }
   #btnComprar{
-    width: 100%;
+    width: 40%;
     font-size: medium;
 }
 #contador{
@@ -255,6 +257,7 @@ transition: transform 0.2s, background-color 0.2s;
 
 }
 @media (max-width:376px) {
+
     #geralProduto{
         height: 55vh;
     }
@@ -597,6 +600,7 @@ text-decoration: none;
     background-color: #E7E7E7;
     margin-inline-start: 3%;
     height: 61vh;
+    height: 35vw;
     width: 50vh;
     text-align: center;
 }
@@ -622,3 +626,15 @@ text-decoration: none;
 
 /*----- TENIS ------*/
 /*---------------------*/
+
+@media screen and (max-width: 768px){
+
+    .titulos{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 3vh;
+        margin-top: 5%;
+        margin-left: 10%;
+        color: #3f538a;
+    }
+}
