@@ -5,6 +5,10 @@ body, html{
     
 }
 
+@media screen and (max-width: 100%){
+    
+}
+
 /* ---------------------------------------------------- */
 /* navbar */
 #navbarGeral{
@@ -192,6 +196,7 @@ height: 21%;
     background-color: #84A1F0;
     color: white;
     transform: scale(1.02);
+    
 }
 
 #btnComprar{
@@ -203,7 +208,7 @@ height: 21%;
     color: white;
     background-color: #84A1F0;
     transition: transform 0.2s, background-color 0.2s;
- 
+    
     
 }
 #btnComprar:hover{
@@ -612,8 +617,9 @@ text-decoration: none;
     flex-wrap: wrap;
     justify-content: center;
     padding: 50px;
-    font-family: 'K2D';
+    font-family: 'Inter';
     margin-bottom: -100px;
+    font-weight: 500;
 }
 
 .product-card {
@@ -628,6 +634,24 @@ text-decoration: none;
     text-align: center;
 }
 
+.Tenis-Lula{   
+    height: 175px;
+    margin: 25px;
+    width:650px;
+
+}
+
+.tenis-blue{    
+    margin-top: -23px;
+    height: 250px;
+
+}
+
+.Dunk{
+    margin: -7px
+    
+}
+
 .product-card img {
     max-width: 100%;
     border-radius: 8px;
@@ -635,11 +659,14 @@ text-decoration: none;
 
 .alinhamento {
     text-align: left;
+
 }
 
 .product-card h3 {
     font-size: 1.2em;
     margin: 10px 0;
+    
+    
 }
 
 .product-card p {
@@ -652,10 +679,22 @@ text-decoration: none;
     border: none;
     color: #fff;
     cursor: pointer;
-    padding: 10px 20px;
-    font-size: 1em;
-    margin-top: 10px;
-    width: 250px;
+    padding: 5px 10px;
+    font-size: 16px;
+    width: 260px;
+    font-weight:600;
+}
+
+.product-card h5{
+    font-family: 'K2D';
+    font-weight: 500;
+    font-size: 120%;
+    font-size: 20px;
+    margin: -20px;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 1px;
+
 }
 
 .product-card button:hover {
