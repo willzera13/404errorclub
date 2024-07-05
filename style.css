@@ -176,6 +176,8 @@ transition: transform 0.2s, background-color 0.2s;
 }
 
 @media (max-width:431px) {
+
+
     #geralProduto{
         display: block;
         height: 58vh;
@@ -255,6 +257,7 @@ transition: transform 0.2s, background-color 0.2s;
 
 }
 @media (max-width:376px) {
+
     #geralProduto{
         height: 55vh;
     }
@@ -622,4 +625,16 @@ text-decoration: none;
 }
 
 /*----- TENIS ------*/
-/*---------------------
+/*---------------------*/
+
+@media screen and (max-width: 768px){
+
+    .titulos{
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 3vh;
+        margin-top: 5%;
+        margin-left: 10%;
+        color: #3f538a;
+    }
+}
