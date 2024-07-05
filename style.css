@@ -596,9 +596,10 @@ text-decoration: none;
 .container-favorito{
     background-color: #E7E7E7;
     margin-inline-start: 3%;
-    height: 35vw;
+    height: 100%;
     width: 50vh;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 .container-favorito h2{
