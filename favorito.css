@@ -82,6 +82,7 @@ cursor: pointer;
 background-color: #E7E7E7;
 margin-inline-start: 40px;
 height: 370px;
+width: 250px;
 text-align: center;
 }
 
@@ -89,6 +90,7 @@ text-align: center;
 margin-right: 125px;
 font-weight: 500;
 font-size: 14px;
+text-align: center;
 
 }
 
@@ -97,6 +99,8 @@ font-size: 14px;
 font-size: 14px;
 font-weight: 600;
 margin-right: 60px;
+text-align: center;
+margin-top: 1px;
 
 
 }
@@ -108,6 +112,8 @@ color: #fff;
 font-weight: 500;
 border: none;
 width: 180px;
+position: relative;
+bottom: 20px;
 
 }
 
@@ -256,3 +262,36 @@ border:10px solid #000;
 }
 /* navbar */
 /*---------------------------------------------------*/
+
+
+@media screen and (max-width: 768px){
+
+.container-geral{
+
+flex-direction: column;
+
+}
+
+.ordenar{
+
+display: flex;
+margin: 0;
+margin-left: 115px;
+margin-top: 50px;
+}
+    
+
+#fav2{
+
+    margin-top: 40px;
+
+}
+
+
+#fav3{
+
+margin-top: 40px;
+
+}
+
+}

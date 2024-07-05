@@ -3,6 +3,8 @@
 
 body, html{
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 
@@ -77,6 +79,13 @@ width: 500px;
 
    }
 
+
+.container-fav br{
+
+display: none;
+
+}
+
    .info p {
 
 font-size: 14px;
@@ -89,7 +98,9 @@ justify-content: center;
     border: 2px solid rgba(61, 88, 133, 1);
 max-width: 350px;
 border-radius: 10px;
-text-align: center; justify-content: center; align-items: center;
+text-align: center;
+ justify-content: center;
+  align-items: center;
    }
 
    .pag hr {
@@ -109,6 +120,7 @@ border: 2px ;
    font-weight: 400;
 
 }
+
 
 
    .val {
@@ -140,6 +152,8 @@ text-align: center;
    .container-geral {
       display: flex;
       justify-content: space-between; /* Isso alinha os contêineres dos produtos e da área de compra nos extremos da tela */
+     padding-top: 200px;
+     
       padding: 20px; /* Adicione um espaçamento para evitar que os elementos fiquem muito próximos das bordas */
   }
 
@@ -255,3 +269,81 @@ margin-right: 100px;
 }
 /* navbar */
 /*---------------------------------------------------*/
+
+.athletic-break {
+    display: inline;
+}
+
+@media screen and (max-width: 768px){
+
+
+.container-geral{
+
+flex-direction: column;    
+margin-left: -200px;
+
+}
+
+.container-faccompra{
+
+    margin-right: -200px;
+    padding-top: 40px;
+
+
+}
+
+.container-fav{
+
+width: 350px;
+
+
+}
+
+
+
+
+
+.container-fav h2{
+
+font-size: 12px;
+
+}
+
+
+.container-fav hr{
+
+
+width: 125px;
+
+}
+
+.athletic-break {
+    display: block;
+}
+
+
+.preco h3{
+
+font-size: 15px;
+
+}
+
+
+#espec-cor{
+
+position: relative;
+right: 120px;
+
+
+}
+
+
+#espec-tam{
+
+position: relative;
+right: 125px;
+}
+
+}
+
+
