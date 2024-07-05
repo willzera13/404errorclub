@@ -197,8 +197,8 @@ transition: transform 0.2s, background-color 0.2s;
     }
   /* ----------------------------- */
   #descriProduto{
-    width: 100%;
-    margin-left: 10%;
+    width: 90%;
+    margin-left: 8%;
 }
 .titulo{    
     margin-top: 0;
