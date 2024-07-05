@@ -167,4 +167,16 @@ strong {
     margin-top: -23%;
     margin-bottom: 6%;
   }
+
+  .textobonito {
+    font-family: "Montserrat", sans-serif;
+    color: var(--blueo);
+    font-weight: 800;
+    font-size: 5vw;
+    margin-top: -40%;
+  }
+
+  .icone {
+    display: none;
+  }
 }
