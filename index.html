@@ -5,16 +5,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Principal</title>
+  <title>teste</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/headerfooter.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   </head>
 
 <body>
+
+  <!---Header PC-->
   <header>
-    <div id="navbarGeral" style="margin-top: -11.5vh;">
+    <div id="navbarGeral" style="position: fixed;top:0;left: 0;">
       <div id="navbarRight">
         <a id="logo" href="index.html"><img src="images/logo-white.png" width="43%"></a>
       </div>
@@ -45,9 +48,41 @@
       </div>
     </div>
   </header>
+  <!---Header PC-->
+
+  <!---Header MOBILE-->
+  <header>
+    <div id="navbarGeralMobile" class="container px-4" style="position: fixed;top:0;left: 0;">
+      <div class="row mt-2">
+        <div class="col float-start">
+          <a href="carrinho.html">
+            <img src="images/bolsa-de-compras.png" alt="Carrinho" class="imgCarrinho">
+          </a>
+        </div>
+        <div class="col mx-0 d-flex alinharIcones">
+          <a href="index.html"><img src="images/logo-white.png" class="logo"></a>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <a href="login.html" class="botoesNav">
+            <img src="images/adicionar-usuario.png" alt="Usuário" class="imgLogin">
+          </a>
+        </div>
+      </div>
+      <div class="row mt-2 mb-15">
+        <div class="pesquisar d-flex alinharIcones">
+          <input type="text" placeholder="Pesquisar" id="barraPesquisa">
+          <div id="btPesquisa">
+            <a href="pesquisa.html">
+              <img src="images/lupa (1).png" alt="Lupa" id="lupa">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!---Header MOBILE-->
 
   <main style="margin-top: 11.5vh; padding: 2%;" >
-
     <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
       <div class="carousel-inner" style="border-radius: 10px;  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.404);">
         <div class="carousel-item active">
@@ -68,31 +103,34 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-
-  
+    </div>  
   </main>
-  <h1 class="titulos" style="margin-top: 7vh;">NOVA COLEÇÃO NIKE</h1>
-  <div class="container-geral">
-    <div class="container-favorito">
-        <img src="images/dunk-removebg-preview.png" alt="Nike Dunk Low">
-        <h2>NIKE DUNK LOW</h2>
-        <p>R$699,99</p>
+
+
+  <div class="container-maior">
+    <h1 class="titulos">NOVA COLEÇÃO</h1>
+    <div class="container-geral">
+      <div class="container-favorito">
+          <img src="images/dunk-removebg-preview.png" alt="Nike Dunk Low">
+          <h2>NIKE DUNK LOW</h2>
+          <p>R$699,99</p>
+          <button type="button" class="btn btn-primary">COMPRE AGORA</button>
+      </div>
+      <div class="container-favorito">
+          <img src="images/tenis/ADIDAS CAMPUS 00S.png" alt="Adidas Campus 00s">
+          <h2>ADIDAS CAMPUS 00s</h2>
+          <p>R$699,99</p>
+          <button type="button" class="btn btn-primary">COMPRE AGORA</button>
+      </div>
+      <div class="container-favorito">
+        <img src="images/tenis/AJ1 RETRO HIGH BRED TOE.png" alt="Air Jordan 1 Retro High Bred Toe">
+        <h2>NIKE AIR JORDAN 1 HIGH</h2>
+        <p>R$1199,99</p>
         <button type="button" class="btn btn-primary">COMPRE AGORA</button>
+      </div>
     </div>
-    <div class="container-favorito">
-        <img src="images/tenis/ADIDAS CAMPUS 00S.png" alt="Adidas Campus 00s">
-        <h2>ADIDAS CAMPUS 00s</h2>
-        <p>R$699,99</p>
-        <button type="button" class="btn btn-primary">COMPRE AGORA</button>
-    </div>
-    <div class="container-favorito">
-      <img src="images/tenis/AJ1 RETRO HIGH BRED TOE.png" alt="Air Jordan 1 Retro High Bred Toe">
-      <h2>NIKE AIR JORDAN 1 HIGH</h2>
-      <p>R$1199,99</p>
-      <button type="button" class="btn btn-primary">COMPRE AGORA</button>
   </div>
-</div>
+
 
   <main style="margin-top: 11.5vh; padding: 2%;" >
 
@@ -117,82 +155,71 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-  
   </main>
-
-  <h1 class="titulos" style="margin-top: 7vh;">OS MAIS PROCURADOS</h1>
-  <div id="destaquesGeral">
-   <button id="prevBtn2"><img src="images/arrow_left.svg" alt=""></button>
-
-   <div class="destaqInd2">
-    <img src="images/tenis-lula-molusco-tres.jpeg" alt="" class="divImgEstoq">
-    <h4 class="NomeDestaque">Lula Molusco Nike</h4>
-    <div id="divTxtDescri">
-      <h4 class="PreçoDestaq"><b>R$15.000,00</b></h4>
-      <p class="espDestaq">12x com bastante juros</p>
-      <div id="divbtComprar">
-        <button class="btComprar">Comprar</button>
-      </div>
-    </div>
-  </div>
-    <button id="nextBtn2"><img src="images/arrow_right.svg" alt=""></button>
-  </div>
-
-  <div class="novidades">
-    <h1>QUER <br> RECEBER <span style="color: #84A1F0;">NOVIDADES</span> ?</h1>
-    <div class="quero">
-      <input type="text" class="form-control" placeholder="seuemail@gmail.com" aria-label="Username"
-        aria-describedby="basic-addon1">
-      <button type="button" class="btn btn-primary">QUERO!</button>
-    </div>
-  </div>
-  <div class="rodape">
-    <div class="rodape1">
-      <img style="width: 120px;" src="images/logo-white.png" alt="logo">
-      <hr>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos earum ad error est illo ipsam vel saepe, deserunt
-        consectetur at cupiditate corrupti odit magni eligendi, sed illum quaerat corporis aliquid.</p>
-    </div>
-    <div class="rodape2">
-      <h2>TÊNIS</h2>
-      <hr>
-      <a href="">Nike</a>
-      <a href="">Adidas</a>
-      <a href="">Vans</a>
-      <a href="">Puma</a>
-      <a href="">Coonverse</a>
-      <a href="">New Balance</a>
-    </div>
-    <div class="rodape3">
-      <div class="medias">
-        <img src="images/Facebook_icon_(black).svg.png" alt="">
-        <img src="images/60580.png" alt="">
-        <img src="images/black-instagram-icon.webp" alt="">
-        <img style="width: 45px;"
-          src="images/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.webp" alt="">
-      </div>
-      <div class="botao">
-        <button type="button" class="btn btn-primary">Esta com dúvidas ?</button>
-      </div>
-    </div>
-  </div>
-
-
-
 
 
   <footer>
-    <div class="rodape-pay">
-      <img style="margin-right: 10px;" src="images/pix.jpg" alt="">
-      <img src="images/mastercard-2019.webp" alt="">
-      <img style="margin-left: 10px;" src="images/hipercard.png" alt="">
-      <img style="margin-left: 10px;" src="images/elo.png" alt="">
-    </div>
-    <div class="desenvolvido">
-      <p>Desenvolvido por 404ErrorClub</p>
+    <div class="container-fluid m-0 p-0">
+      <div class="d-flex flex-column flex-md-row receberNovidades m-0 px-3">
+        <div class="col-md-4 mt-2 p-0"> <!--col-4 serve para <576px, col-sm-4 >= 576px -->
+          <h3>QUER<br>RECEBER <span style="color: #84A1F0;">NOVIDADES?</h3> </span>
+        </div>
+        <div class="col-md-8 d-flex mb-3 mt-1">
+          <input type="text" class="form-control" placeholder="seuemail@gmail.com" aria-label="Username"
+            aria-describedby="basic-addon1">
+          <button type="button" class="btn btn-primary ms-2">QUERO!</button>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-md-row infoRodape mx-0 ms-0 py-3">
+        <div class="col-md-4 px-5">
+          <img src="images/logo-white.png" class="logoRodape" alt="logo">
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed leo sit amet lacus facilisis tincidunt. Phasellus at venenatis justo. Phasellus varius iaculis nisl et egestas. Nulla facilisi. Pellentesque sollicitudin porta fringilla. Duis neque mauris, gravida eget venenatis at, ullamcorper a.</p>
+        </div>
+        <div class="col-md-4 d-flex px-5 float-left">
+          <div class="row mx-0">
+            <h2>TÊNIS</h2>
+            <hr>
+            <a href="">Nike</a>
+            <a href="">Adidas</a>
+            <a href="">Vans</a>
+            <a href="">Puma</a>
+            <a href="">Coonverse</a>
+            <a href="">New Balance</a>
+          </div>
+        </div>
+        <div class="col-md-4 ms-0 mt-1">
+          <div class="redesocial d-flex justify-content-center p-3">
+            <img src="images/icons/white-facebook.png" alt="">
+            <img src="images/icons/white-instagram.png" alt="">
+            <img src="images/icons/white-twitter.png" alt="">
+            <img src="images/icons/white-youtube.png" alt="">
+          </div>
+          <div class="d-flex whatsapp mt-2 mb-5">
+            <button type="button" class="btn btn-primary">Esta com dúvidas ?</button>
+          </div>
+        </div>
+      </div>
+      <div class="bandeiras row d-flex align-items-center mx-3">
+        <img class="col-3" src="images/pix.jpg" alt="">
+        <img class="col-3" src="images/mastercard-2019.webp" alt="">
+        <img class="col-3" src="images/hipercard.png" alt="">
+        <img class="col-3" src="images/elo.png" alt="">
+      </div>
+      <div class="row d-flex align-items-center final mx-2 mt-2 mb-2">
+        <div class="col-4">
+          <img src="images/brasil.png" alt="Bandeira do Brasil">
+        </div>
+        <div class="col-4">
+          <p>Copyright © 2024</p>
+        </div>
+        <div class="col-4">
+          <p>Desenvolvido por 404ErrorClub</p>
+        </div>
+      </div>
     </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>

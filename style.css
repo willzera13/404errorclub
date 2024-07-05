@@ -4,109 +4,6 @@
 body, html{
     margin: 0;
 }
-/* ---------------------------------------------------- */
-/* navbar */
-#navbarGeral{
-    background-color: rgba(61, 88, 133, 1);
-    height: 10.5vh;
-    width: 100vw;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.404);
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 2;
-}
-
-#navbarRight{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width: 12.5%;
-}
-
-#navbarCenter{
-    height: 100%;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#navbarLeft{
-    width: 12.5%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-right: 2%;
-}
-
-#barraPesquisa{
-    width: 90%;
-    height: 45%;
-    border-radius: 5px;
-    border: 0;
-    outline: none;
-    font-size: 100%;
-    padding: 20px;
-    font-family: 'Inter';
-    font-weight: 500;
-}
-#logo{
-    margin-left: 12%;
-    
-}
-.divBtNav{
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 5%;
-}
-.divBtNav img{
-    height: 1.6vw;
-}
-
-.botoesNav{
-    color: aliceblue;
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 100%;
-    text-decoration: none;
-}
-
-.botoesNav:hover{
-    text-decoration: none;
-    color: white;
-    font-family: 'Inter';
-    font-weight: 500;
-}
-
-#btPesquisa{
-    width: 1.7vw;
-    height: 1.7vw;
-    background-color: rgba(61, 88, 133, 1);
-    position: relative;
-    right: 4.8%;
-    border-radius: 5px;
-  
-}
-.imgIcone{
-    width: auto;
-    height: 32%;
-}
-#lupa{
-    width: auto;
-    height: 100%;
-}
-#iconFav{
-    width: auto;
-    height: 100%;
-}
-#iconEntrar{
-    width: auto;
-}
-/* navbar */
-/*---------------------------------------------------*/
 
 /* compra */
 #geralProduto{
@@ -385,6 +282,9 @@ transition: transform 0.2s, background-color 0.2s;
 
 /* compra */
 
+
+
+
 /*---------------------------------------------------*/
 
 /* footer */
@@ -486,54 +386,84 @@ transition: transform 0.2s, background-color 0.2s;
     position: relative;
     bottom: 15px;
 }
-@media (max-width: 371px) {
-    .novidades {
-        display: grid
-    }
-.novidades input {
-    width: 200px;
+
+/*------FOOTER NOVO v2-------*/
+
+footer {
+    width: 100%;
 }
-.quero {
-margin-right: 200px;
+
+.receberNovidades {
+    background-color: #555555;
+    width: 100%;
+    height: 5vw;
+    align-items: center;
 }
-.novidades h1 {
-    font-size: 25px;
-    margin-left: 200px;
-    }
-    .rodape {
-    display: grid;
-    height: 800px;
-    }
-    .rodape p {
-    max-width: 240px;
-    }
-    .rodape hr {
-    width: 250px;
-    }
-    .rodape2 {
-    margin-left: 50px;
-    }
-    .rodape2 hr {
-    width: 70px;
-    }
-    .rodape3 {
-    margin-left: 50px;
-    }
-    footer {
-    display: none;
-    }
-    }
-    /* footer */
-    /* ----------------------------------------------------------------------- */
-    /* carrossel */
+
+.receberNovidades input{
+    width: fit-content;
+    padding-right: 25%;
+    margin-left: 25%;
+}
+
+.receberNovidades h3{
+    color: white;
+    width: 100%;
+    margin-left: 25%;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+
+.receberNovidades button{
+    background-color: rgba(132, 161, 240, 1);
+    border: none;
+    font-weight: 600;
+}
+
+.infoRodape{
+    background-color: #202020;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoRodape h2{
+    color: rgba(132, 161, 240, 1);
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 1.7vw;
+}
+
+.infoRodape p, .infoRodape a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.7vw;
+}
+
+.infoRodape hr {
+    width: 50%;
+    height: 1px;
+    border: 1px solid#555555;
+}
+
+.redesocial img{
+    height: auto;
+    width: 2vw;
+}
+
+/* footer */
+/* ----------------------------------------------------------------------- */
+/* carrossel */
 #destaquesGeral{
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     margin-top: 2vh;
     margin-bottom: 2vh;
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 0%;
     
 }
 
@@ -620,13 +550,17 @@ text-decoration: none;
     font-family: 'Inter';
     font-weight: 700;
     font-size: 5vh;
-    margin-left: 11%;
+    margin-left: 10%;
     color: #3f538a;
 }
 
 
 
 /*----- TENIS ------*/
+.container-maior{
+    margin-top: 5%;
+}
+
 .container-geral{
     display: flex;
     justify-content: center;
@@ -679,4 +613,6 @@ text-decoration: none;
     font-size: 130%;
     margin-bottom: 15%;
 }
+
 /*----- TENIS ------*/
+/*---------------------
