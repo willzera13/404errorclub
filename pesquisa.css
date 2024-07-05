@@ -424,7 +424,11 @@ transition: transform 0.2s, background-color 0.2s;
 }
 
 
-
+@media (max-width: 768px) {
+    .resultado {
+        padding-left: 0px;
+    }
+}
 
 @media (max-width: 371px) {
 
@@ -611,7 +615,6 @@ text-decoration: none;
     font-family: 'Inter';
     font-weight: 700;
     margin-left: 0%;
-    margin-left: -10%;
     margin-top: 5%;
     margin-bottom: 0;
     padding-top: 80px;
