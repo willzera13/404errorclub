@@ -101,7 +101,7 @@ height: 21%;
     gap: 7%;
   }
 #btnComprar{
-    width: 35%;
+    width: 100%;
     font-size: large;
     border: none;
     border-radius: 7px;
@@ -223,7 +223,7 @@ transition: transform 0.2s, background-color 0.2s;
     gap: 11%;
   }
   #btnComprar{
-    width: 40%;
+    width: 100%;
     font-size: medium;
 }
 #contador{
@@ -621,4 +621,4 @@ text-decoration: none;
 }
 
 /*----- TENIS ------*/
-/*---------------------
+/*---------------------*/
