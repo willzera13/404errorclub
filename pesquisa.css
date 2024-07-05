@@ -608,7 +608,15 @@ text-decoration: none;
 
 
 .resultado {
-    padding: 80px;
+    font-family: 'Inter';
+    font-weight: 700;
+    margin-left: 0%;
+    margin-left: -10%;
+    margin-top: 5%;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .product-grid {
@@ -634,10 +642,10 @@ text-decoration: none;
     text-align: center;
 }
 
-.Tenis-Lula{   
-    height: 175px;
-    margin: 25px;
-    width:650px;
+.Tenis-Lula{ 
+    margin: auto;
+    height: auto;
+    width: 300px;
 
 }
 
